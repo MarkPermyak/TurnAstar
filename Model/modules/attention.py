@@ -5,7 +5,7 @@ from torch import nn, einsum
 from torch.nn import functional as F
 from einops import rearrange, repeat
 
-from utils.checkpoint import checkpoint
+from .utils.checkpoint import checkpoint
 
 
 def default(val, d):
