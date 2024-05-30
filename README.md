@@ -14,7 +14,7 @@ git clone git@github.com:MarkPermyak/TurnAstar.git
 ### Install requirements
 
 ```bash
-python install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 # Usage

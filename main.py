@@ -1,5 +1,3 @@
-# input : map, start, goal, resolution, turns,  algo, w, heuristic
-# output : dict with results?
 import numpy as np
 import argparse
 import torch
