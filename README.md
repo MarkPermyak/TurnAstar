@@ -63,3 +63,17 @@ If `--algo=WTurnA*`, weight of estimation `--w` must be specified.
 If `--algo=GBFS`, path for saved model `--ckpt_path` must be specified. Trained model paths are: `./Weights/PGM64.ckpt` for maps 64x64 and `./Weights/PGM128.ckpt` for maps 128x128.
 
 If `--algo=FocalTurnA*`, both `--w` and `--ckpt_path` must be specified.
+
+# Results format
+
+```
+RES_dict = {
+    'found'     : Solution was found or not,
+    'cost'      : Cost of solution,
+    'steps'     : Number of algorithm steps,
+    'all_nodes' : Number of created nodes in OPEN and CLOSED,
+    'last_node' : Goal node with calculated f-value,
+    'OPEN'      : OPEN list at the end of the search,
+    'CLOSED'    : CLOSED list at the end of the search
+    }
+```
